@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Text Summarizer — WriteFast</title>
+<meta name="description" content="Summarize any text, article, or essay instantly. Adjustable summary length. Free AI-powered summarizer.">
+<meta name="keywords" content="text summarizer, summarize article, summary generator, free summarizer, essay summarizer">
+<link rel="canonical" href="https://alexchalu.github.io/writefast/text-summarizer.html">
+<meta property="og:title" content="Free Text Summarizer">
+<meta property="og:description" content="Summarize any text, article, or essay instantly. Adjustable summary length. Free AI-powered summarizer.">
+<meta property="og:url" content="https://alexchalu.github.io/writefast/text-summarizer.html">
+<meta property="og:type" content="website">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Free Text Summarizer","url":"https://alexchalu.github.io/writefast/text-summarizer.html","description":"Summarize any text, article, or essay instantly. Adjustable summary length. Free AI-powered summarizer.","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f172a;--surface:#1e293b;--border:#334155;--text:#f1f5f9;--muted:#94a3b8;--accent:#3b82f6;--accent2:#8b5cf6;--success:#22c55e}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:20px}
+header{text-align:center;padding:30px 0;border-bottom:1px solid var(--border)}
+header h1{font-size:2em;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{color:var(--muted);font-size:1.1em}
+.logo-link{text-decoration:none;color:var(--muted);font-size:0.9em;display:inline-block;margin-bottom:10px}
+.tool-area{background:var(--surface);border-radius:12px;padding:24px;margin:24px 0;border:1px solid var(--border)}
+textarea,input[type="text"],input[type="number"],select{width:100%;padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:15px;margin:8px 0;resize:vertical;font-family:inherit}
+textarea{min-height:150px}
+button{padding:12px 24px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:15px;font-weight:600;margin:4px;transition:all .2s}
+button:hover{opacity:0.9;transform:translateY(-1px)}
+.btn-secondary{background:var(--accent2)}
+.btn-success{background:var(--success)}
+.output{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin:12px 0;min-height:100px;white-space:pre-wrap;word-wrap:break-word}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}
+.stat{background:var(--bg);padding:10px 16px;border-radius:8px;border:1px solid var(--border);flex:1;min-width:120px;text-align:center}
+.stat .num{font-size:1.5em;font-weight:700;color:var(--accent)}
+.stat .label{font-size:0.8em;color:var(--muted)}
+.related{margin:40px 0}
+.related h3{margin-bottom:16px;color:var(--muted)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.related-grid a{display:block;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text);transition:all .2s}
+.related-grid a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.ad-slot{margin:20px 0;min-height:90px;text-align:center}
+footer{text-align:center;padding:40px 0;color:var(--muted);border-top:1px solid var(--border);margin-top:40px}
+footer a{color:var(--accent);text-decoration:none}
+.options{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.option-btn{padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;color:var(--muted);cursor:pointer;font-size:13px;transition:all .2s}
+.option-btn.active,.option-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(59,130,246,0.1)}
+@media(max-width:600px){.container{padding:12px}header h1{font-size:1.5em}.stats{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="index.html" class="logo-link">← WriteFast</a>
+<h1>Free Text Summarizer</h1>
+<p>Summarize any text, article, or essay instantly. Adjustable summary length. Free AI-powered summarizer.</p>
+</header>
+<div class="ad-slot" id="ad-top">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<div class="tool-area" id="tool-container"></div>
+<div class="ad-slot" id="ad-mid">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<div class="related">
+<h3>More Writing Tools</h3>
+<div class="related-grid">
+<a href="paraphraser.html">Free Paraphraser Tool</a>
+<a href="grammar-checker.html">Free Grammar Checker</a>
+<a href="word-counter.html">Word Counter & Character Counter</a>
+<a href="plagiarism-checker.html">Free Plagiarism Checker</a>
+<a href="essay-writer.html">Free Essay Outline Generator</a>
+<a href="tone-detector.html">Tone Detector & Analyzer</a>
+</div>
+</div>
+<div class="ad-slot" id="ad-bottom">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<footer>
+<p><a href="index.html">WriteFast</a> — Free AI Writing Tools</p>
+<p style="margin-top:8px"><a href="https://alexchalu.github.io/toolpulse/">ToolPulse</a> · <a href="https://alexchalu.github.io/smartcalc/">SmartCalc</a></p>
+</footer>
+</div>
+<script>
+
+const container = document.getElementById('tool-container');
+container.innerHTML = `
+<textarea id="input" placeholder="Paste the text you want to summarize..."></textarea>
+<div style="display:flex;align-items:center;gap:12px;margin:8px 0">
+<label style="color:var(--muted)">Summary Length:</label>
+<input type="range" id="length" min="10" max="80" value="30" style="flex:1">
+<span id="lengthVal" style="color:var(--accent)">30%</span>
+</div>
+<button onclick="summarize()">Summarize</button>
+<button class="btn-secondary" onclick="copyOutput()">Copy Summary</button>
+<div class="stats" id="stats"></div>
+<div class="output" id="output">Summary will appear here...</div>
+`;
+document.getElementById('length').oninput = e => document.getElementById('lengthVal').textContent = e.target.value+'%';
+function summarize() {
+  const text = document.getElementById('input').value.trim();
+  if (!text) return;
+  const pct = parseInt(document.getElementById('length').value) / 100;
+  const sentences = text.match(/[^.!?\n]+[.!?]+/g) || text.split('\n').filter(s=>s.trim());
+  const scored = sentences.map((s, i) => {
+    let score = 0;
+    const words = s.toLowerCase().split(/\s+/);
+    if (i === 0) score += 3;
+    if (i === sentences.length - 1) score += 1;
+    score += words.filter(w => w.length > 6).length;
+    const important = ['important','key','significant','crucial','essential','main','primary','conclusion','result','therefore','however','moreover','furthermore','consequently'];
+    score += words.filter(w => important.includes(w)).length * 2;
+    return { text: s.trim(), score, index: i };
+  });
+  const keep = Math.max(1, Math.round(sentences.length * pct));
+  const summary = scored.sort((a,b) => b.score - a.score).slice(0, keep).sort((a,b) => a.index - b.index).map(s => s.text).join(' ');
+  const origWords = text.split(/\s+/).length;
+  const sumWords = summary.split(/\s+/).length;
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="num">${origWords}</div><div class="label">Original Words</div></div>
+    <div class="stat"><div class="num">${sumWords}</div><div class="label">Summary Words</div></div>
+    <div class="stat"><div class="num">${Math.round((1 - sumWords/origWords)*100)}%</div><div class="label">Reduced By</div></div>
+  `;
+  document.getElementById('output').textContent = summary;
+}
+function copyOutput() { navigator.clipboard.writeText(document.getElementById('output').textContent); }
+</script>
+</body>
+</html>

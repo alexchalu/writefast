@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexchalu.github.io/writefast/sitemap.xml

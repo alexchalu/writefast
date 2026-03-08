@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hashtag Generator — WriteFast</title>
+<meta name="description" content="Generate relevant hashtags for Instagram, Twitter, and TikTok. Boost your social media reach.">
+<meta name="keywords" content="hashtag generator, instagram hashtags, twitter hashtags, tiktok hashtags, trending hashtags">
+<link rel="canonical" href="https://alexchalu.github.io/writefast/hashtag-generator.html">
+<meta property="og:title" content="Hashtag Generator">
+<meta property="og:description" content="Generate relevant hashtags for Instagram, Twitter, and TikTok. Boost your social media reach.">
+<meta property="og:url" content="https://alexchalu.github.io/writefast/hashtag-generator.html">
+<meta property="og:type" content="website">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Hashtag Generator","url":"https://alexchalu.github.io/writefast/hashtag-generator.html","description":"Generate relevant hashtags for Instagram, Twitter, and TikTok. Boost your social media reach.","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f172a;--surface:#1e293b;--border:#334155;--text:#f1f5f9;--muted:#94a3b8;--accent:#3b82f6;--accent2:#8b5cf6;--success:#22c55e}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:20px}
+header{text-align:center;padding:30px 0;border-bottom:1px solid var(--border)}
+header h1{font-size:2em;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{color:var(--muted);font-size:1.1em}
+.logo-link{text-decoration:none;color:var(--muted);font-size:0.9em;display:inline-block;margin-bottom:10px}
+.tool-area{background:var(--surface);border-radius:12px;padding:24px;margin:24px 0;border:1px solid var(--border)}
+textarea,input[type="text"],input[type="number"],select{width:100%;padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:15px;margin:8px 0;resize:vertical;font-family:inherit}
+textarea{min-height:150px}
+button{padding:12px 24px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:15px;font-weight:600;margin:4px;transition:all .2s}
+button:hover{opacity:0.9;transform:translateY(-1px)}
+.btn-secondary{background:var(--accent2)}
+.btn-success{background:var(--success)}
+.output{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin:12px 0;min-height:100px;white-space:pre-wrap;word-wrap:break-word}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}
+.stat{background:var(--bg);padding:10px 16px;border-radius:8px;border:1px solid var(--border);flex:1;min-width:120px;text-align:center}
+.stat .num{font-size:1.5em;font-weight:700;color:var(--accent)}
+.stat .label{font-size:0.8em;color:var(--muted)}
+.related{margin:40px 0}
+.related h3{margin-bottom:16px;color:var(--muted)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.related-grid a{display:block;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text);transition:all .2s}
+.related-grid a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.ad-slot{margin:20px 0;min-height:90px;text-align:center}
+footer{text-align:center;padding:40px 0;color:var(--muted);border-top:1px solid var(--border);margin-top:40px}
+footer a{color:var(--accent);text-decoration:none}
+.options{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.option-btn{padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;color:var(--muted);cursor:pointer;font-size:13px;transition:all .2s}
+.option-btn.active,.option-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(59,130,246,0.1)}
+@media(max-width:600px){.container{padding:12px}header h1{font-size:1.5em}.stats{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="index.html" class="logo-link">← WriteFast</a>
+<h1>Hashtag Generator</h1>
+<p>Generate relevant hashtags for Instagram, Twitter, and TikTok. Boost your social media reach.</p>
+</header>
+<div class="ad-slot" id="ad-top">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<div class="tool-area" id="tool-container"></div>
+<div class="ad-slot" id="ad-mid">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<div class="related">
+<h3>More Writing Tools</h3>
+<div class="related-grid">
+<a href="paraphraser.html">Free Paraphraser Tool</a>
+<a href="grammar-checker.html">Free Grammar Checker</a>
+<a href="text-summarizer.html">Free Text Summarizer</a>
+<a href="word-counter.html">Word Counter & Character Counter</a>
+<a href="plagiarism-checker.html">Free Plagiarism Checker</a>
+<a href="essay-writer.html">Free Essay Outline Generator</a>
+</div>
+</div>
+<div class="ad-slot" id="ad-bottom">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<footer>
+<p><a href="index.html">WriteFast</a> — Free AI Writing Tools</p>
+<p style="margin-top:8px"><a href="https://alexchalu.github.io/toolpulse/">ToolPulse</a> · <a href="https://alexchalu.github.io/smartcalc/">SmartCalc</a></p>
+</footer>
+</div>
+<script>
+
+const container = document.getElementById('tool-container');
+container.innerHTML = `
+<input type="text" id="topic" placeholder="Enter your topic or niche...">
+<div class="options">
+<button class="option-btn active" data-platform="instagram">Instagram</button>
+<button class="option-btn" data-platform="twitter">Twitter/X</button>
+<button class="option-btn" data-platform="tiktok">TikTok</button>
+</div>
+<button onclick="generateHashtags()">Generate Hashtags</button>
+<button class="btn-secondary" onclick="copyOutput()">Copy All</button>
+<div class="stats" id="stats"></div>
+<div class="output" id="output">Hashtags will appear here...</div>
+`;
+let htPlatform = 'instagram';
+document.querySelectorAll('.option-btn').forEach(b => { b.onclick = () => { document.querySelectorAll('.option-btn').forEach(x => x.classList.remove('active')); b.classList.add('active'); htPlatform = b.dataset.platform; }; });
+function generateHashtags() {
+  const topic = document.getElementById('topic').value.trim().toLowerCase();
+  if (!topic) return;
+  const base = topic.replace(/[^a-z0-9]/g, '');
+  const words = topic.split(/\s+/);
+  const tags = new Set();
+  tags.add('#' + base);
+  tags.add('#' + base + 'tips');
+  tags.add('#' + base + '2026');
+  tags.add('#' + base + 'life');
+  tags.add('#' + base + 'lover');
+  tags.add('#' + base + 'daily');
+  tags.add('#' + base + 'community');
+  tags.add('#' + base + 'goals');
+  tags.add('#' + base + 'inspo');
+  tags.add('#' + base + 'vibes');
+  words.forEach(w => { if (w.length > 2) { tags.add('#' + w); tags.add('#' + w + 's'); }});
+  const general = ['#trending','#viral','#explore','#fyp','#foryou','#instagood','#photooftheday','#love','#beautiful','#happy','#instadaily','#picoftheday','#follow','#style','#amazing','#lifestyle','#motivation','#inspiration','#goals','#success'];
+  const niche = {
+    food: ['#foodie','#foodporn','#instafood','#yummy','#cooking','#recipe','#homemade','#delicious'],
+    fitness: ['#fitfam','#workout','#gym','#fitnessmotivation','#healthylifestyle','#training','#bodybuilding'],
+    travel: ['#wanderlust','#travelgram','#adventure','#vacation','#travelphotography','#explore','#tourist'],
+    fashion: ['#ootd','#fashionista','#streetstyle','#fashionblogger','#outfitoftheday','#stylish'],
+    tech: ['#technology','#coding','#programming','#developer','#startup','#innovation','#ai','#software'],
+    business: ['#entrepreneur','#hustle','#business','#marketing','#startup','#success','#money','#growth'],
+    photography: ['#photography','#photographer','#photo','#camera','#lens','#portrait','#landscape']
+  };
+  Object.entries(niche).forEach(([key, htags]) => { if (topic.includes(key) || words.includes(key)) htags.forEach(h => tags.add(h)); });
+  general.slice(0, 10).forEach(h => tags.add(h));
+  const limit = htPlatform === 'instagram' ? 30 : htPlatform === 'tiktok' ? 15 : 5;
+  const finalTags = [...tags].slice(0, limit);
+  document.getElementById('stats').innerHTML = `<div class="stat"><div class="num">${finalTags.length}</div><div class="label">Hashtags</div></div><div class="stat"><div class="num">${limit}</div><div class="label">Recommended Max</div></div>`;
+  document.getElementById('output').textContent = finalTags.join(' ') + '\n\n--- Copy-friendly version ---\n\n' + finalTags.join('\n');
+}
+function copyOutput() { navigator.clipboard.writeText(document.getElementById('output').textContent); }
+</script>
+</body>
+</html>

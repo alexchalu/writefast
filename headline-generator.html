@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog Headline Generator — WriteFast</title>
+<meta name="description" content="Generate catchy headlines for blog posts, articles, and social media. Multiple formulas and styles.">
+<meta name="keywords" content="headline generator, title generator, blog headline, catchy titles, headline ideas">
+<link rel="canonical" href="https://alexchalu.github.io/writefast/headline-generator.html">
+<meta property="og:title" content="Blog Headline Generator">
+<meta property="og:description" content="Generate catchy headlines for blog posts, articles, and social media. Multiple formulas and styles.">
+<meta property="og:url" content="https://alexchalu.github.io/writefast/headline-generator.html">
+<meta property="og:type" content="website">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3112605892426625" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Blog Headline Generator","url":"https://alexchalu.github.io/writefast/headline-generator.html","description":"Generate catchy headlines for blog posts, articles, and social media. Multiple formulas and styles.","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0f172a;--surface:#1e293b;--border:#334155;--text:#f1f5f9;--muted:#94a3b8;--accent:#3b82f6;--accent2:#8b5cf6;--success:#22c55e}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:20px}
+header{text-align:center;padding:30px 0;border-bottom:1px solid var(--border)}
+header h1{font-size:2em;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{color:var(--muted);font-size:1.1em}
+.logo-link{text-decoration:none;color:var(--muted);font-size:0.9em;display:inline-block;margin-bottom:10px}
+.tool-area{background:var(--surface);border-radius:12px;padding:24px;margin:24px 0;border:1px solid var(--border)}
+textarea,input[type="text"],input[type="number"],select{width:100%;padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:15px;margin:8px 0;resize:vertical;font-family:inherit}
+textarea{min-height:150px}
+button{padding:12px 24px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:15px;font-weight:600;margin:4px;transition:all .2s}
+button:hover{opacity:0.9;transform:translateY(-1px)}
+.btn-secondary{background:var(--accent2)}
+.btn-success{background:var(--success)}
+.output{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin:12px 0;min-height:100px;white-space:pre-wrap;word-wrap:break-word}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}
+.stat{background:var(--bg);padding:10px 16px;border-radius:8px;border:1px solid var(--border);flex:1;min-width:120px;text-align:center}
+.stat .num{font-size:1.5em;font-weight:700;color:var(--accent)}
+.stat .label{font-size:0.8em;color:var(--muted)}
+.related{margin:40px 0}
+.related h3{margin-bottom:16px;color:var(--muted)}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.related-grid a{display:block;padding:14px;background:var(--surface);border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text);transition:all .2s}
+.related-grid a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.ad-slot{margin:20px 0;min-height:90px;text-align:center}
+footer{text-align:center;padding:40px 0;color:var(--muted);border-top:1px solid var(--border);margin-top:40px}
+footer a{color:var(--accent);text-decoration:none}
+.options{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.option-btn{padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:20px;color:var(--muted);cursor:pointer;font-size:13px;transition:all .2s}
+.option-btn.active,.option-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(59,130,246,0.1)}
+@media(max-width:600px){.container{padding:12px}header h1{font-size:1.5em}.stats{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a href="index.html" class="logo-link">← WriteFast</a>
+<h1>Blog Headline Generator</h1>
+<p>Generate catchy headlines for blog posts, articles, and social media. Multiple formulas and styles.</p>
+</header>
+<div class="ad-slot" id="ad-top">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<div class="tool-area" id="tool-container"></div>
+<div class="ad-slot" id="ad-mid">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<div class="related">
+<h3>More Writing Tools</h3>
+<div class="related-grid">
+<a href="paraphraser.html">Free Paraphraser Tool</a>
+<a href="grammar-checker.html">Free Grammar Checker</a>
+<a href="text-summarizer.html">Free Text Summarizer</a>
+<a href="word-counter.html">Word Counter & Character Counter</a>
+<a href="plagiarism-checker.html">Free Plagiarism Checker</a>
+<a href="essay-writer.html">Free Essay Outline Generator</a>
+</div>
+</div>
+<div class="ad-slot" id="ad-bottom">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3112605892426625" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+<footer>
+<p><a href="index.html">WriteFast</a> — Free AI Writing Tools</p>
+<p style="margin-top:8px"><a href="https://alexchalu.github.io/toolpulse/">ToolPulse</a> · <a href="https://alexchalu.github.io/smartcalc/">SmartCalc</a></p>
+</footer>
+</div>
+<script>
+
+const container = document.getElementById('tool-container');
+container.innerHTML = `
+<input type="text" id="topic" placeholder="Enter your topic or keyword...">
+<div class="options">
+<button class="option-btn active" data-style="listicle">Listicle</button>
+<button class="option-btn" data-style="howto">How-To</button>
+<button class="option-btn" data-style="question">Question</button>
+<button class="option-btn" data-style="power">Power Words</button>
+<button class="option-btn" data-style="numbers">Numbers</button>
+</div>
+<button onclick="generateHeadlines()">Generate Headlines</button>
+<button class="btn-secondary" onclick="copyOutput()">Copy All</button>
+<div class="output" id="output">Headlines will appear here...</div>
+`;
+let style = 'listicle';
+document.querySelectorAll('.option-btn').forEach(b => {
+  b.onclick = () => {
+    document.querySelectorAll('.option-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    style = b.dataset.style;
+  };
+});
+function generateHeadlines() {
+  const topic = document.getElementById('topic').value.trim();
+  if (!topic) return;
+  const T = topic.charAt(0).toUpperCase() + topic.slice(1);
+  const t = topic.toLowerCase();
+  const templates = {
+    listicle: [`10 ${T} Tips That Actually Work in 2026`,`7 ${T} Secrets Nobody Tells You`,`15 Best ${T} Strategies for Beginners`,`5 ${T} Mistakes You're Probably Making`,`12 Proven ${T} Techniques from Experts`,`8 ${T} Hacks That Will Change Your Life`,`21 ${T} Ideas You Need to Try Today`,`6 ${T} Trends Dominating Right Now`],
+    howto: [`How to Master ${T} in 30 Days`,`The Complete Guide to ${T} (2026)`,`How to ${T}: A Step-by-Step Guide`,`${T} for Beginners: Everything You Need to Know`,`How to Get Started with ${T} Today`,`The Ultimate ${T} Tutorial for 2026`,`How I Improved My ${T} by 300%`,`How to ${T} Like a Pro`],
+    question: [`Is ${T} Worth It? Here's What the Data Says`,`What Makes ${T} So Effective?`,`Why Is Everyone Talking About ${T}?`,`Does ${T} Actually Work? We Tested It`,`What's the Best Way to Approach ${T}?`,`Why ${T} Matters More Than You Think`,`Can ${T} Really Change Your Life?`,`What Experts Won't Tell You About ${T}`],
+    power: [`The Shocking Truth About ${T}`,`${T}: The Ultimate Guide You'll Ever Need`,`Explosive ${T} Strategies That Guarantee Results`,`The Secret ${T} Formula Top Performers Use`,`Unleash the Power of ${T} Today`,`Revolutionary ${T} Methods That Actually Deliver`,`The Untold Story of ${T}`,`Breakthrough ${T} Techniques Revealed`],
+    numbers: [`${T}: 47% of People Get This Wrong`,`I Spent 1,000 Hours on ${T}. Here's What I Learned`,`${T}: From $0 to $10,000 in 90 Days`,`The 80/20 Rule of ${T}`,`${T} Results: A 5-Year Case Study`,`How ${T} Increased My Productivity by 200%`,`The $1 Million ${T} Strategy`,`30-Day ${T} Challenge: Real Results`]
+  };
+  document.getElementById('output').textContent = templates[style].map((h,i) => (i+1)+'. '+h).join('\n\n');
+}
+function copyOutput() { navigator.clipboard.writeText(document.getElementById('output').textContent); }
+</script>
+</body>
+</html>
